@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Text Replier ChatGPT Chrome Extension",
+    "version": "1.0",
+    "description": "A Chrome extension that uses OpenAI's ChatGPT API to generate responses",
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "clipboardWrite",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_width": 600,
+        "default_height": 400
+    },
+    "content_scripts": [
+        {
+            "css": ["popup.css"],
+            "js": ["popup.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

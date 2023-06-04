@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+div#app {
+    padding: 24px 24px;
+    background-color: #FFFFFF;
+}
+
+div#app h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #000000;
+    margin: 0 auto;
+}
+
+div#app div#options {
+    display: grid;
+    grid-template-columns: repeat(2, 49.5%);
+    gap: 6px 1%;
+    margin: 24px 0;
+}
+
+div#app div#options button,
+div#response button {
+    cursor: pointer;
+    border: 0;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div#app div#options button#very-positive {
+    background-color: #00FF00;
+    color: #000000;
+}
+
+div#app div#options button#slightly-positive {
+    background-color: #99FF99;
+    color: #000000;
+}
+
+div#app div#options button#slightly-negative {
+    background-color: #FF9999;
+    color: #000000;
+}
+
+div#app div#options button#very-negative {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+div#app div#options button#default {
+    background-color: #9b8b00;
+    color: #FFFFFF;
+}
+
+div#app div#options button#close {
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+div#app h2#loading-text {
+    color: #9b8b00;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+    display: none;
+}
+
+div#response h2 {
+    color: #009fbb;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+div#response p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+div#response button#copy {
+    background-color: #009fbb;
+    color: #FFFFFF;
+}
+
+div#response button#close {
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+div#response button#logout {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
